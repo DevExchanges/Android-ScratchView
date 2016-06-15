@@ -7,15 +7,16 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="info.devexchanges.scratchview.MainActivity">
+    tools:context=".TextViewActivity">
 
     <com.cooltechworks.views.ScratchTextView
         android:id="@+id/text"
-        android:padding="@dimen/activity_horizontal_margin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autoLink="web"
         android:gravity="center"
-        android:text="gghghjgjgj"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="http://www.devexchanges.info/"
         android:textSize="15sp"
         android:textStyle="bold" />
 </RelativeLayout>

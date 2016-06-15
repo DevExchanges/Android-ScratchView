@@ -1,15 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:padding="@dimen/activity_horizontal_margin"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
 
     <com.cooltechworks.views.ScratchImageView
         android:id="@+id/sample_image"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:background="@android:color/white"
-        android:src="@mipmap/ic_launcher"
-        />
+        android:src="@drawable/nexus_6p" />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iphone 6s" />
+
+        <RadioButton
+            android:id="@+id/nexus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nexus 6P" />
+
+        <RadioButton
+            android:id="@+id/pp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blackberry Passport" />
+
+        <RadioButton
+            android:id="@+id/lu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nokia Lumia 930" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F88A00"
+        android:text="Confirm"
+        android:textColor="@android:color/white" />
 
 </LinearLayout>

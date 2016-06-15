@@ -6,19 +6,19 @@ import android.widget.Toast;
 
 import com.cooltechworks.views.ScratchTextView;
 
-public class MainActivity extends AppCompatActivity {
+public class TextViewActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_text);
         ScratchTextView scratchTextView = (ScratchTextView)findViewById(R.id.text);
 
         assert scratchTextView != null;
         scratchTextView.setRevealListener(new ScratchTextView.IRevealListener() {
             @Override
             public void onRevealed(ScratchTextView tv) {
-                Toast.makeText(MainActivity.this, "ghgjh", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TextViewActivity.this, "Revealed!", Toast.LENGTH_SHORT).show();
             }
         });
     }
